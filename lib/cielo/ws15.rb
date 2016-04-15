@@ -174,7 +174,7 @@ module Cielo
       response = send_request(capture_message.serialize(transaction, total))
 
       return capture_message.unserialize(response, transaction)
-	  end
+    end
 
     # Envia uma requisicao-token para a Cielo
     #
@@ -187,7 +187,7 @@ module Cielo
       response = send_request(token_message.serialize(@merchant, holder))
 
       return token_message.unserialize(response)
-	  end
+    end
 
     # Envia uma requisicao-transacao para a Cielo
     #
@@ -200,7 +200,7 @@ module Cielo
       response = send_request(transaction_message.serialize(transaction))
 
       return transaction_message.unserialize(response, transaction)
-	  end
+    end
 
     private
     def send_request(message)

@@ -4,6 +4,7 @@ require "cielo/ws15/authorization"
 require "cielo/ws15/capture"
 require "cielo/ws15/cancellation"
 require "cielo/ws15/token"
+require "cielo/ws15/exception"
 
 # Helper para serialização e deserialização dos XML de requisição e resposta
 module Cielo::WS15Message
@@ -98,7 +99,7 @@ module Cielo::WS15Message
     code = document.xpath(".//erro/codigo").text
     message = document.xpath(".//erro/mensagem").text
 
-    raise "Erro[#{code}]: #{message}" unless code == ""
+    raise Cielo::IntegrationError.new(code: code, body: message) unless code.empty?
   end
 
   def self.load_document(message)
