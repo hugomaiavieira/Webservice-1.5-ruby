@@ -31,6 +31,7 @@ Gem::Specification.new do |spec|
                 "lib/cielo/ws15/token_message.rb",
                 "lib/cielo/ws15/transaction.rb",
                 "lib/cielo/ws15/transaction_message.rb",
+                "lib/cielo/ws15/exception.rb",
                 "lib/cielo/ws15.rb"]
 
   spec.add_dependency "bundler", "~> 1.6"
