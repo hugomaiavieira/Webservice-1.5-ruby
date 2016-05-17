@@ -1,10 +1,10 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'cielo/ws15'
+require 'cielo/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'cielo-ws15'
-  spec.version       = Cielo::WS15::VERSION
+  spec.version       = Cielo::VERSION
   spec.authors       = ['Cielo']
   spec.email         = ['cieloecommerce@cielo.com.br']
   spec.description   = "Integração com o webservice 1.5 da Cielo"
