@@ -10,7 +10,7 @@ module Cielo::WS15Message
       builder = Nokogiri::XML::Builder.new(:encoding => "ISO-8859-1") do |xml|
         xml.send("requisicao-token",
                      "xmlns" => Cielo::WS15::NAMESPACE,
-                     "versao" => Cielo::WS15::VERSION,
+                     "versao" => Cielo::WS15::XML_VERSION,
                      "id" => UUIDTools::UUID.random_create) {
 
             Cielo::WS15Message.serialize_dados_ec(xml, merchant)
