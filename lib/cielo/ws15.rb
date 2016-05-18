@@ -29,7 +29,7 @@ module Cielo
     NAMESPACE = "http://ecommerce.cbmp.com.br"
 
     # Versão do XML utilizado na integração
-    VERSION = "1.3.0"
+    XML_VERSION = "1.3.0"
 
     attr_accessor :merchant, :endpoint
     private :merchant, :endpoint

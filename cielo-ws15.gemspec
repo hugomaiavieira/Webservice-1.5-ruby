@@ -1,6 +1,6 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'cielo/ws15'
+require 'cielo/ws15/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'cielo-ws15'
@@ -32,6 +32,7 @@ Gem::Specification.new do |spec|
                 "lib/cielo/ws15/transaction.rb",
                 "lib/cielo/ws15/transaction_message.rb",
                 "lib/cielo/ws15/exception.rb",
+                "lib/cielo/ws15/version.rb",
                 "lib/cielo/ws15.rb"]
 
   spec.add_dependency "bundler", "~> 1.6"
