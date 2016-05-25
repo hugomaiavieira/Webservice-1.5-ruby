@@ -1,0 +1,411 @@
+"00":
+  message: "Transação autorizada"
+  description: "Transação nacional aprovada com sucesso"
+  action: ""
+  client_message: "Transação aprovada com sucesso."
+  retryable: false
+  card_error: false
+"01":
+  message: "Transação referida pelo banco emissor"
+  description: "Referida pelo banco emissor"
+  action: "Oriente o portador a contatar o banco emissor do cartão"
+  client_message: "Transação referida pelo banco emissor do cartão. Entre em contato com o mesmo."
+  retryable: false
+  card_error: false
+"04":
+  message: "Transação não autorizada"
+  description: "Existe algum tipo de restrição no cartão"
+  action: "Oriente o portador a refazer a transação"
+  client_message: "Transação não autorizada. Tente novamente."
+  retryable: true
+  card_error: false
+"05":
+  message: "Transação não autorizada"
+  description: "Existe algum tipo de restrição no cartão"
+  action: "Oriente o portador a contatar o banco emissor do cartão"
+  client_message: "Transação não autorizada. Entre em contato com o banco emissor do cartão."
+  retryable: true
+  card_error: false
+"06":
+  message: "Tente novamente"
+  description: "Falha na autorização"
+  action: "Oriente o portador a refazer a transação"
+  client_message: "Falha na autorização. Tente novamente."
+  retryable: true
+  card_error: false
+"07":
+  message: "Cartão com restrição"
+  description: "Existe algum tipo de restrição no cartão"
+  action: "Oriente o portador a contatar o banco emissor do cartão"
+  client_message: "Existe alguma restrição no cartão. Entre em contato com o banco emissor do cartão."
+  retryable: false
+  card_error: true
+"08":
+  message: "Código de segurança inválido"
+  description: "Código de segurança incorreto"
+  action: "Oriente o portador a refazer a transação informando o código de segurança corretamente"
+  client_message: "Código de segurança incorreto. Tente novamente informando o código de segurança corretamente."
+  retryable: false
+  card_error: true
+"11":
+  message: "Transação autorizada"
+  description: "Transação internacional aprovada com sucesso"
+  action: ""
+  client_message: "Transação aprovada com sucesso."
+  retryable: false
+  card_error: false
+"13": # TODO: erro de programação
+  message: "Valor inválido"
+  description: "Valor inválido"
+  action: "Oriente o portador a refazer a transação digitando o valor correto"
+  client_message: "O valor da transação é inválido. Tente novamente informando o valor corretamente."
+  retryable: false
+  card_error: false
+"14":
+  message: "Cartão inválido"
+  description: "Digitação incorreta do número do cartão"
+  action: "Oriente o portador a verificar o número do cartão e digitar novamente"
+  client_message: "O número do cartão é inválido. Tente novamente informando o número do cartão corretamente."
+  retryable: false
+  card_error: true
+"15":
+  message: "Banco emissor indisponível"
+  description: "Banco emissor indisponível"
+  action: "Oriente o portador a aguardar alguns instantes e tentar novamente"
+  client_message: "Falha na comunicação entre sistemas. Espere alguns instantes e tente novamente."
+  retryable: true
+  card_error: false
+"21": # TODO: ação necessária do estabelecimento
+  message: "Cancelamento não efetuado"
+  description: "Cancelamento não localizado no banco emissor"
+  action: "O estabelecimento deve entrar em contato com a Central de Relacionamento Cielo"
+  client_message: "O cancelamento não pôde ser efetuado. O estabelecimento deve entrar em contato com a Cielo."
+  retryable: false
+  card_error: false
+"41":
+  message: "Cartão com restrição"
+  description: "Existe algum tipo de restrição no cartão"
+  action: "Oriente o portador a contatar o banco emissor do cartão"
+  client_message: "Existe alguma restrição no cartão. Entre em contato com o banco emissor do cartão."
+  retryable: false
+  card_error: true
+"51":
+  message: "Saldo insuficiente"
+  description: "Saldo insuficiente"
+  action: "Oriente o portador a contatar o banco emissor do cartão"
+  client_message: "Saldo insuficiente no cartão. Entre em contato com o banco emissor do cartão."
+  retryable: true
+  card_error: false
+"54":
+  message: "Cartão vencido"
+  description: "Cartão vencido"
+  action: "Oriente o portador a verificar o vencimento do cartão e digitar novamente"
+  client_message: "Cartão vencido. Verifique o vencimento do cartão e tente novamente."
+  retryable: false
+  card_error: true
+"57":
+  message: "Transação não permitida"
+  description: "Existe algum tipo de restrição no cartão"
+  action: "Oriente o portador a contatar o banco emissor do cartão"
+  client_message: "Existe alguma restrição no cartão. Entre em contato com o banco emissor do cartão."
+  retryable: true
+  card_error: false
+"60":
+  message: "Transação não autorizada"
+  description: "Existe algum tipo de restrição no cartão"
+  action: "Oriente o portador a contatar o banco emissor do cartão"
+  client_message: "Existe alguma restrição no cartão. Entre em contato com o banco emissor do cartão."
+  retryable: false
+  card_error: false
+"62":
+  message: "Transação não autorizada"
+  description: "Existe algum tipo de restrição no cartão"
+  action: "Oriente o portador a contatar o banco emissor do cartão"
+  client_message: "Existe alguma restrição no cartão. Entre em contato com o banco emissor do cartão."
+  retryable: false
+  card_error: false
+"78":
+  message: "Cartão não foi desbloqueado pelo portador"
+  description: "Cartão não foi desbloqueado pelo portador"
+  action: "Oriente o portador a desbloquear o cartão junto ao emissor do cartão"
+  client_message: "O cartão não foi desbloqueado pelo portador. Desbloqueie o cartão e tente novamente."
+  retryable: true
+  card_error: false
+"82":
+  message: "Erro no cartão"
+  description: "Cartão inválido"
+  action: "Oriente o portador a verificar o número do cartão e digitar novamente"
+  client_message: "O número do cartão é inválido. Tente novamente informando o número do cartão corretamente."
+  retryable: true
+  card_error: true
+"91":
+  message: "Banco fora do ar"
+  description: "Banco emissor indisponível"
+  action: "Oriente o portador a aguardar alguns instantes e tentar novamente"
+  client_message: "Falha na comunicação entre sistemas. Espere alguns instantes e tente novamente."
+  retryable: true
+  card_error: false
+"96":
+  message: "Tente novamente"
+  description: "Falha no envio da autorização"
+  action: "Oriente o portador a aguardar alguns instantes e tentar novamente"
+  client_message: "Falha na comunicação entre sistemas. Espere alguns instantes e tente novamente."
+  retryable: true
+  card_error: false
+"AA":
+  message: "Tempo excedido"
+  description: "Timeout na comunicação com o banco emissor"
+  action: "Oriente o portador a aguardar alguns instantes e tentar novamente"
+  client_message: "Falha na comunicação entre sistemas. Espere alguns instantes e tente novamente."
+  retryable: true
+  card_error: false
+"AC":
+  message: "Use função débito"
+  description: "Cartão de débito tentando utilizar produto crédito"
+  action: "Oriente o portador a utilizar o cartão de débito (Visa ou MasterCard)"
+  client_message: "Tentativa de utilizar um cartão de débito como crédito. Escolha a função débito (se disponível) ou utiliza um cartão de crédito."
+  retryable: false
+  card_error: false
+"GA":
+  message: "Transação referida pela Cielo"
+  description: "Referida pela Cielo"
+  action: "Oriente o portador a aguardar alguns instantes e tentar novamente"
+  client_message: "Falha na comunicação entre sistemas. Espere alguns instantes e tente novamente."
+  retryable: true
+  card_error: false
+errors:
+"1":
+  message: "Mensagem inválida"
+  description: "A mensagem XML está fora do formato especificado pelo arquivo eCommerce.xsd"
+  action: "Revisar as informações enviadas na mensagem XML frente às especificações"
+  retryable: false
+"2": # TODO: ação necessária do estabelecimento
+  message: "Credenciais inválidas"
+  description: "Impossibilidade de autenticar uma requisição da loja virtual."
+  action: "Verificar se o número de credenciamento e a chave estão corretos"
+  retryable: false
+"3":
+  message: "Transação inexistente"
+  description: "Não existe transação para o identificador informado"
+  action: "Rever a aplicação"
+  retryable: false
+"8":
+  message: "Código de Segurança Inválido"
+  description: "O código de segurança informado na mensagem é inválido."
+  action: "Revisar as informações de cartão enviadas na mensagem XML"
+  retryable: false
+"10":
+  message: "Inconsistência no envio do cartão"
+  description: "A transação, com ou sem cartão, está divergente com a permissão de envio dessa informação"
+  action: "Rever se o cadastro da loja permite o envio do cartão ou não"
+  retryable: false
+"11":
+  message: "Modalidade não habilitada"
+  description: "A transação está configurada com uma modalidade de pagamento não habilitada para a loja"
+  action: "Rever a modalidade de pagamento solicitada"
+  retryable: false
+"12":
+  message: "Número de parcelas inválido"
+  description: "O número de parcelas solicitado ultrapassa o máximo permitido"
+  action: "Rever a forma de pagamento"
+  retryable: false
+"13":
+  message: "Flag de autorização automática"
+  description: "Flag de autorização automática incompatível com a inválida forma de pagamento solicitada"
+  action: "Rever as regras de utilização da flag"
+  retryable: false
+"14":
+  message: "Autorização Direta inválida"
+  description: "A solicitação de Autorização Direta está inválida"
+  action: "Rever as regras de utilização da Autorização Direta"
+  retryable: false
+"15":
+  message: "Autorização Direta sem Cartão"
+  description: "A solicitação de Autorização Direta está sem cartão"
+  action: "Rever as regras de utilização da Autorização Direta"
+  retryable: false
+"16":
+  message: "Identificador, TID, inválido"
+  description: "O TID fornecido está duplicado"
+  action: "Rever a aplicação"
+  retryable: false
+"17":
+  message: "Código de segurança ausente"
+  description: "O código de segurança do cartão não foi enviado (essa informação é sempre obrigatória para Amex)"
+  action: "Rever a aplicação"
+  retryable: false
+"18":
+  message: "Indicador de código de segurança inconsistente"
+  description: "Uso incorreto do indicador de código de segurança"
+  action: "Revisar as informações de cartão enviadas na mensagem XML"
+  retryable: false
+"19":
+  message: "URL de Retorno não fornecida"
+  description: "A URL de Retorno é obrigatória, exceto para recorrência e autorização direta."
+  action: "Revisar as informações enviadas na mensagem XML"
+  retryable: false
+"20":
+  message: "Status não permite autorização"
+  description: "Não é permitido realizar autorização para o status da transação"
+  action: "Rever as regras de autorização"
+  retryable: false
+"21":
+  message: "Prazo de autorização vencido"
+  description: "Não é permitido realizar autorização, pois o prazo está vencido"
+  action: "Rever as regras de autorização"
+  retryable: false
+"22":
+  message: "Número de parcelas inválido"
+  description: "Não é permitido realizar autorização para este número de parcelas"
+  action: "Rever as regras de autorização"
+  retryable: false
+"25":
+  message: "Encaminhamento a autorização não permitido"
+  description: "O resultado da Autenticação da transação não permite a solicitação de Autorização"
+  action: "Rever as regras de autorização"
+  retryable: false
+"30":
+  message: "Status inválido para captura"
+  description: "O status da transação não permite captura"
+  action: "Rever as regras de captura"
+  retryable: false
+"31":
+  message: "Prazo de captura vencido"
+  description: "A captura não pode ser realizada, pois o prazo para captura está vencido"
+  action: "Rever as regras de captura"
+  retryable: false
+"32":
+  message: "Valor de captura inválido"
+  description: "O valor solicitado para captura não é válido"
+  action: "Rever as regras de captura"
+  retryable: false
+"33":
+  message: "Falha ao capturar"
+  description: "Não foi possível realizar a captura"
+  action: "Realizar nova tentativa. Persistindo, entrar em contato com o Suporte eCommerce e informar o TID da transação."
+  retryable: true
+"34":
+  message: "Valor da taxa de embarque obrigatório"
+  description: "O valor da taxa de embarque é obrigatório se a captura for parcial e a autorização tiver sido feita com taxa de embarque."
+  action: "Envie novamente a requisição de captura com a tag."
+  retryable: false
+"35":
+  message: "Bandeira inválida para utilização da Taxa de Embarque"
+  description: "A bandeira utilizada na transação não tem suporte à taxa de embarque."
+  action: "Remova a taxa de embarque ou utilize um cartão que suporte esta funcionalidade: Visa ou Mastercard."
+  retryable: false
+"36":
+  message: "Produto inválido para utilização da Taxa de Embarque"
+  description: "O produto escolhido não tem suporte à taxa de embarque."
+  action: "Altere o produto."
+  retryable: false
+"40":
+  message: "Prazo de cancelamento vencido"
+  description: "O cancelamento não pode ser realizado, pois o prazo está vencido"
+  action: "Rever as regras de cancelamento."
+  retryable: false
+"42":
+  message: "Falha ao cancelar"
+  description: "Não foi possível realizar o cancelamento"
+  action: "Realizar nova tentativa. Persistindo, entrar em contato com o Suporte eCommerce e informar o TID da transação."
+  retryable: true
+"43":
+  message: "Valor de cancelamento é maior que valor autorizado."
+  description: "O valor que está tentando cancelar supera o valor total capturado da transação."
+  action: "Revisar o valor do cancelamento parcial, pois não pode ser maior que o valor capturado da transação."
+  retryable: false
+"51":
+  message: "Recorrência Inválida"
+  description: "As configurações da transação não permitem que a transação recorrente seja efetuada com sucesso."
+  action: "Verifique se escolheu “Crédito à vista”; Verifique se está enviando somente o token ou somente o cartão de crédito"
+  retryable: false
+"52":
+  message: "Token Inválido"
+  description: "O token fornecido na requisição de autorização não é válido ou está bloqueado."
+  action: "Verifique se o Token está correto. Persistindo, entrar em contato com o Suporte."
+  retryable: false
+"53":
+  message: "Recorrência não habilitada"
+  description: "O cadastro do lojista não permite o envio de transações recorrentes."
+  action: "Entre em contato com suporte para saber como habilitar a recorrência no cadastro."
+  retryable: false
+"54":
+  message: "Transação com Token inválida"
+  description: "As configurações da transação não permitem que a autorização direta com uso de Token seja efetuada com sucesso."
+  action: "Verifique se escolheu “Crédito à vista”; Verifique se está enviando somente o token ou somente o cartão de crédito."
+  retryable: false
+"55":
+  message: "Número do cartão não fornecido"
+  description: "Foi solicitado criação de Token, porém o número do cartão de crédito não foi fornecido."
+  action: "Revisar as informações enviadas na mensagem XML frente às especificações"
+  retryable: false
+"56":
+  message: "Validade do cartão não fornecido"
+  description: "Foi solicitado criação de Token, porém a validade do cartão de crédito não foi fornecida."
+  action: "Revisar as informações enviadas na mensagem XML frente às especificações."
+  retryable: false
+"57":
+  message: "Erro inesperado gerando Token"
+  description: "Falha no sistema ocorrida no momento da geração do Token."
+  action: "Tentar novamente. Persistindo, entrar em contato com o Suporte."
+  retryable: true
+"61":
+  message: "Transação Recorrente Inválida"
+  description: "As configurações da transação recorrente estão inválidas."
+  action: "Verifique se o produto é Crédito à vista, se o token ou o cartão foram enviados na mensagem."
+  retryable: false
+"77":
+  message: "XID não fornecido"
+  description: "Foi solicitado uma autorização com autenticação externa, porém o campo XID não foi fornecido."
+  action: "Revisar as informações enviadas na mensagem XML frente às especificações."
+  retryable: false
+"78":
+  message: "CAVV não fornecido"
+  description: "Foi solicitado uma autorização com autenticação externa, porém o campo CAVV não foi fornecido."
+  action: "Revisar as informações enviadas na mensagem XML frente às especificações."
+  retryable: false
+"86":
+  message: "XID e CAVV não fornecidos"
+  description: "Foi solicitado uma autorização com autenticação externa, porém os campos CAVV e XID não foram fornecidos."
+  action: "Revisar as informações enviadas na mensagem XML frente às especificações."
+  retryable: false
+"87":
+  message: "CAVV com tamanho divergente"
+  description: "Foi solicitado uma autorização com autenticação externa, porém o campo CAVV possue um tamanho divergente."
+  action: "Revisar as informações enviadas na mensagem XML frente às especificações."
+  retryable: false
+"88":
+  message: "XID com tamanho divergente"
+  description: "Foi solicitado uma autorização com autenticação externa, porém o campo XID possue um tamanho divergente."
+  action: "Revisar as informações enviadas na mensagem XML frente às especificações."
+  retryable: false
+"89":
+  message: "ECI com tamanho divergente"
+  description: "Foi solicitado uma autorização com autenticação externa, porém o campo ECI possue um tamanho divergente."
+  action: "Revisar as informações enviadas na mensagem XML frente às especificações."
+  retryable: false
+"90":
+  message: "ECI inválido"
+  description: "Foi solicitado uma autorização com autenticação externa, porém o campo ECI possue um valor inválido."
+  action: "Revisar as informações enviadas na mensagem XML frente às especificações."
+  retryable: false
+"95":
+  message: "Erro interno de autenticação"
+  description: "Falha no sistema"
+  action: "Persistindo, entrar em contato com o Suporte e informar o TID da transação."
+  retryable: true
+"97":
+  message: "Sistema indisponível"
+  description: "Falha no sistema"
+  action: "Persistindo, entrar em contato com o Suporte."
+  retryable: true
+"98":
+  message: "Timeout"
+  description: "A aplicação não respondeu dentro de 25 segundos"
+  action: "Persistindo, entrar em contato com o Suporte."
+  retryable: true
+"99":
+  message: "Erro inesperado"
+  description: "Falha no sistema"
+  action: "Persistindo, entrar em contato com o Suporte e informar o TID da transação."
+  retryable: true

@@ -23,6 +23,8 @@ Gem::Specification.new do |spec|
                 "lib/cielo/ws15/capture.rb",
                 "lib/cielo/ws15/capture_message.rb",
                 "lib/cielo/ws15/holder.rb",
+                "lib/cielo/ws15/lr_info.rb",
+                "lib/cielo/ws15/lr_infos.yml",
                 "lib/cielo/ws15/merchant.rb",
                 "lib/cielo/ws15/message.rb",
                 "lib/cielo/ws15/order.rb",
