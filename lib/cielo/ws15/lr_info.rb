@@ -1,6 +1,9 @@
+require 'yaml'
+
 module Cielo
   # Dados relacionados ao código LR da autorização
   #
+  # @attr [String] code Código LR da autorização
   # @attr [String] message Mensagem para o estabelecimento comercial
   # @attr [String] description Descrição para o estabelecimento comercial
   # @attr [String] action Ação que deve ser tomada pelo estabelecimento comercial
