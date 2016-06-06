@@ -42,11 +42,11 @@ module Cielo
       indicator = nil,
       cvv = Holder::CVV_NOT_INFORMED)
 
-      if (expiration_year == nil)
+      if expiration_year.nil?
         @token = token_or_number
       else
         @number = token_or_number
-        @expiration = "#{expiration_year}#{expiration_month}"
+        @expiration = "#{expiration_year}#{expiration_month.to_s.rjust(2, '0')}"
         @indicator = indicator
         @cvv = cvv
       end
