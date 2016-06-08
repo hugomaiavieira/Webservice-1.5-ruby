@@ -39,4 +39,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "nokogiri", "~> 1.6"
   spec.add_dependency "uuidtools", "~> 2.1"
   spec.add_development_dependency "yard", "~> 0.8"
+  spec.add_development_dependency "rspec", "~> 3.4"
 end
