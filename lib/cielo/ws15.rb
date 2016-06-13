@@ -14,6 +14,10 @@ require "net/http"
 
 # SDK de integração com o Webservice 1.5 da Cielo
 module Cielo
+  def self.root_path
+    File.dirname __dir__
+  end
+
   # Integração com o Webservice 1.5;  esse participante faz um papel de facilitador
   # para a construção de todos os participantes importantes para a integração.
   # Através de factory methods, é possível criar as instâncias pré-configuradas

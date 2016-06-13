@@ -1,0 +1,175 @@
+"00":
+  message: "Transação autorizada"
+  description: "Transação nacional aprovada com sucesso"
+  action: ""
+  client_message: "Transação aprovada com sucesso."
+  retryable: false
+  card_error: false
+"01":
+  message: "Transação referida pelo banco emissor"
+  description: "Referida pelo banco emissor"
+  action: "Oriente o portador a contatar o banco emissor do cartão"
+  client_message: "Transação referida pelo banco emissor do cartão. Entre em contato com o mesmo."
+  retryable: false
+  card_error: false
+"04":
+  message: "Transação não autorizada"
+  description: "Existe algum tipo de restrição no cartão"
+  action: "Oriente o portador a refazer a transação"
+  client_message: "Transação não autorizada. Tente novamente."
+  retryable: true
+  card_error: false
+"05":
+  message: "Transação não autorizada"
+  description: "Existe algum tipo de restrição no cartão"
+  action: "Oriente o portador a contatar o banco emissor do cartão"
+  client_message: "Transação não autorizada. Entre em contato com o banco emissor do cartão."
+  retryable: true
+  card_error: false
+"06":
+  message: "Tente novamente"
+  description: "Falha na autorização"
+  action: "Oriente o portador a refazer a transação"
+  client_message: "Falha na autorização. Tente novamente."
+  retryable: true
+  card_error: false
+"07":
+  message: "Cartão com restrição"
+  description: "Existe algum tipo de restrição no cartão"
+  action: "Oriente o portador a contatar o banco emissor do cartão"
+  client_message: "Existe alguma restrição no cartão. Entre em contato com o banco emissor do cartão."
+  retryable: false
+  card_error: true
+"08":
+  message: "Código de segurança inválido"
+  description: "Código de segurança incorreto"
+  action: "Oriente o portador a refazer a transação informando o código de segurança corretamente"
+  client_message: "Código de segurança incorreto. Tente novamente informando o código de segurança corretamente."
+  retryable: false
+  card_error: true
+"11":
+  message: "Transação autorizada"
+  description: "Transação internacional aprovada com sucesso"
+  action: ""
+  client_message: "Transação aprovada com sucesso."
+  retryable: false
+  card_error: false
+"13":
+  message: "Valor inválido"
+  description: "Valor inválido"
+  action: "Oriente o portador a refazer a transação digitando o valor correto"
+  client_message: "O valor da transação é inválido. Tente novamente informando o valor corretamente."
+  retryable: false
+  card_error: false
+"14":
+  message: "Cartão inválido"
+  description: "Digitação incorreta do número do cartão"
+  action: "Oriente o portador a verificar o número do cartão e digitar novamente"
+  client_message: "O número do cartão é inválido. Tente novamente informando o número do cartão corretamente."
+  retryable: false
+  card_error: true
+"15":
+  message: "Banco emissor indisponível"
+  description: "Banco emissor indisponível"
+  action: "Oriente o portador a aguardar alguns instantes e tentar novamente"
+  client_message: "Falha na comunicação entre sistemas. Espere alguns instantes e tente novamente."
+  retryable: true
+  card_error: false
+"21":
+  message: "Cancelamento não efetuado"
+  description: "Cancelamento não localizado no banco emissor"
+  action: "O estabelecimento deve entrar em contato com a Central de Relacionamento Cielo"
+  client_message: "O cancelamento não pôde ser efetuado. O estabelecimento deve entrar em contato com a Cielo."
+  retryable: false
+  card_error: false
+"41":
+  message: "Cartão com restrição"
+  description: "Existe algum tipo de restrição no cartão"
+  action: "Oriente o portador a contatar o banco emissor do cartão"
+  client_message: "Existe alguma restrição no cartão. Entre em contato com o banco emissor do cartão."
+  retryable: false
+  card_error: true
+"51":
+  message: "Saldo insuficiente"
+  description: "Saldo insuficiente"
+  action: "Oriente o portador a contatar o banco emissor do cartão"
+  client_message: "Saldo insuficiente no cartão. Entre em contato com o banco emissor do cartão."
+  retryable: true
+  card_error: false
+"54":
+  message: "Cartão vencido"
+  description: "Cartão vencido"
+  action: "Oriente o portador a verificar o vencimento do cartão e digitar novamente"
+  client_message: "Cartão vencido. Verifique o vencimento do cartão e tente novamente."
+  retryable: false
+  card_error: true
+"57":
+  message: "Transação não permitida"
+  description: "Existe algum tipo de restrição no cartão"
+  action: "Oriente o portador a contatar o banco emissor do cartão"
+  client_message: "Existe alguma restrição no cartão. Entre em contato com o banco emissor do cartão."
+  retryable: true
+  card_error: false
+"60":
+  message: "Transação não autorizada"
+  description: "Existe algum tipo de restrição no cartão"
+  action: "Oriente o portador a contatar o banco emissor do cartão"
+  client_message: "Existe alguma restrição no cartão. Entre em contato com o banco emissor do cartão."
+  retryable: false
+  card_error: false
+"62":
+  message: "Transação não autorizada"
+  description: "Existe algum tipo de restrição no cartão"
+  action: "Oriente o portador a contatar o banco emissor do cartão"
+  client_message: "Existe alguma restrição no cartão. Entre em contato com o banco emissor do cartão."
+  retryable: false
+  card_error: false
+"78":
+  message: "Cartão não foi desbloqueado pelo portador"
+  description: "Cartão não foi desbloqueado pelo portador"
+  action: "Oriente o portador a desbloquear o cartão junto ao emissor do cartão"
+  client_message: "O cartão não foi desbloqueado pelo portador. Desbloqueie o cartão e tente novamente."
+  retryable: true
+  card_error: false
+"82":
+  message: "Erro no cartão"
+  description: "Cartão inválido"
+  action: "Oriente o portador a verificar o número do cartão e digitar novamente"
+  client_message: "O número do cartão é inválido. Tente novamente informando o número do cartão corretamente."
+  retryable: true
+  card_error: true
+"91":
+  message: "Banco fora do ar"
+  description: "Banco emissor indisponível"
+  action: "Oriente o portador a aguardar alguns instantes e tentar novamente"
+  client_message: "Falha na comunicação entre sistemas. Espere alguns instantes e tente novamente."
+  retryable: true
+  card_error: false
+"96":
+  message: "Tente novamente"
+  description: "Falha no envio da autorização"
+  action: "Oriente o portador a aguardar alguns instantes e tentar novamente"
+  client_message: "Falha na comunicação entre sistemas. Espere alguns instantes e tente novamente."
+  retryable: true
+  card_error: false
+"AA":
+  message: "Tempo excedido"
+  description: "Timeout na comunicação com o banco emissor"
+  action: "Oriente o portador a aguardar alguns instantes e tentar novamente"
+  client_message: "Falha na comunicação entre sistemas. Espere alguns instantes e tente novamente."
+  retryable: true
+  card_error: false
+"AC":
+  message: "Use função débito"
+  description: "Cartão de débito tentando utilizar produto crédito"
+  action: "Oriente o portador a utilizar o cartão de débito (Visa ou MasterCard)"
+  client_message: "Tentativa de utilizar um cartão de débito como crédito. Escolha a função débito (se disponível) ou utiliza um cartão de crédito."
+  retryable: false
+  card_error: false
+"GA":
+  message: "Transação referida pela Cielo"
+  description: "Referida pela Cielo"
+  action: "Oriente o portador a aguardar alguns instantes e tentar novamente"
+  client_message: "Falha na comunicação entre sistemas. Espere alguns instantes e tente novamente."
+  retryable: true
+  card_error: false
