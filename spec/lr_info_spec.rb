@@ -6,20 +6,18 @@ RSpec.describe Cielo::LRInfo do
   describe "#initialize" do
     it "should set the attributes based on the given code" do
       expect(subject.message).to eql("Cartão inválido")
-      expect(subject.description).to eql("Digitação incorreta do número do cartão")
-      expect(subject.action).to eql("Oriente o portador a verificar o número do cartão e digitar novamente")
-      expect(subject.client_message).to eql("O número do cartão é inválido. Tente novamente informando o número do cartão corretamente.")
+      expect(subject.description).to eql("Transação não autorizada. Cartão inválido. Tente usar o Algoritmo de Lhum (Mod 10) para evitar transações não autorizadas por esse motivo.")
+      expect(subject.action).to eql("Transação não autorizada. Cartão inválido.  Refazer a transação confirmando os dados informados.")
       expect(subject.retryable).to eql(false)
       expect(subject.card_error).to eql(true)
     end
 
     it "should set the default attributes when code is not found" do
-      subject = described_class.new("52")
+      subject = described_class.new("888")
 
-      expect(subject.message).to eql("Código 52 não identificado")
-      expect(subject.description).to eql("Código 52 não identificado")
+      expect(subject.message).to eql("Código 888 não identificado")
+      expect(subject.description).to eql("Código 888 não identificado")
       expect(subject.action).to eql("Entre em contato com o Suporte Web Cielo eCommerce")
-      expect(subject.client_message).to eql("Erro inesperado")
       expect(subject.retryable).to eql(false)
       expect(subject.card_error).to eql(false)
     end
