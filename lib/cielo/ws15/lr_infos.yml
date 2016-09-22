@@ -39,7 +39,7 @@
   description: "Transação não autorizada. Não foi possível processar a transação. Questão relacionada a segurança, inadimplencia ou limite do portador."
   action: "Transação não autorizada. Entre em contato com seu banco emissor."
   retryable: true
-  card_error: true
+  card_error: false
 "06":
   message: "Transação não autorizada. Cartão cancelado."
   description: "Transação não autorizada. Não foi possível processar a transação. Cartão cancelado permanentemente pelo banco emissor."
