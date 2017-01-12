@@ -5,9 +5,9 @@ RSpec.describe Cielo::LRInfo do
 
   describe "#initialize" do
     it "should set the attributes based on the given code" do
-      expect(subject.message).to eql("Cartão inválido")
-      expect(subject.description).to eql("Transação não autorizada. Cartão inválido. Tente usar o Algoritmo de Lhum (Mod 10) para evitar transações não autorizadas por esse motivo.")
-      expect(subject.action).to eql("Transação não autorizada. Cartão inválido.  Refazer a transação confirmando os dados informados.")
+      expect(subject.message).to eql("Transação não autorizada. Cartão Inválido")
+      expect(subject.description).to eql("Transação não autorizada. Cartão inválido. Pode ser bloqueio do cartão no banco emissor, dados incorretos ou tentativas de testes de cartão. Use o Algoritmo de Lhum (Mod 10) para evitar transações não autorizadas por esse motivo. Consulte www.cielo.com.br/desenvolvedores para implantar o Algoritmo de Lhum.")
+      expect(subject.action).to eql("Não foi possível processar a transação. reveja os dados informados e tente novamente. Se o erro persistir, entre em contato com seu banco emissor.")
       expect(subject.retryable).to eql(false)
       expect(subject.card_error).to eql(true)
     end
