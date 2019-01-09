@@ -11,7 +11,6 @@ Gem::Specification.new do |spec|
   spec.summary       = "SDK Webservice 1.5"
   spec.homepage      = 'https://github.com/DeveloperCielo/Webservice-1.5-ruby'
   spec.license       = 'MIT'
-  spec.has_rdoc      = 'yard'
 
   spec.required_ruby_version = '>= 2.0.0'
   spec.require_paths = ['lib']
